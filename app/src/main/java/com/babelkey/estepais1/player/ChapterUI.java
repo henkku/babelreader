@@ -1,31 +1,23 @@
 package com.babelkey.estepais1.player;
 
 public class ChapterUI {
-	private int chapterBegins;
-	private int chapterEnds;
-	private String description;
-	public ChapterUI(int chapterBegins, int chapterEnds, String description) {
-		this.chapterBegins = chapterBegins;
-		this.chapterEnds = chapterEnds;
-		this.description = description;
+	private int chapterId;
+	private String name;
+	public ChapterUI(int chapterId, String name) {
+		this.chapterId = chapterId;
+		this.name = name;
 	}
-	public int getChapterBegins() {
-		return chapterBegins;
+	public int getChapterId() {
+		return chapterId;
 	}
-	public void setChapterBegins(int chapterBegins) {
-		this.chapterBegins = chapterBegins;
+	public void setChapterId(int chapterId) {
+		this.chapterId = chapterId;
 	}
-	public int getChapterEnds() {
-		return chapterEnds;
+	public String getName() {
+		return name;
 	}
-	public void setChapterEnds(int chapterEnds) {
-		this.chapterEnds = chapterEnds;
-	}
-	public String getDescription() {
-		return description;
-	}
-	public void setDescription(String description) {
-		this.description = description;
+	public void setName(String name) {
+		this.name = name;
 	}
 	
 	

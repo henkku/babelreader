@@ -132,13 +132,13 @@ public class DBHelper extends SQLiteOpenHelper {
 	
 	public Cursor fetchSentences(ChapterUI chapterUI){
 //		String sql = "SELECT SentenceID, Column1, Column2 FROM Words WHERE SentenceID >= "+ chapterUI.getChapterBegins() +" AND SentenceID <="+ chapterUI.getChapterEnds() +" ORDER BY SentenceID,RowPosition ASC";
-		String sql = "SELECT SentenceID, Column1, Column2 FROM Words WHERE SentenceID BETWEEN "+ chapterUI.getChapterBegins() +" AND "+ chapterUI.getChapterEnds() +" ORDER BY SentenceID,RowPosition ASC";
+		String sql = "SELECT SentenceID, Column1, Column2 FROM Words WHERE Chapter = "+ chapterUI.getChapterId() +" ORDER BY SentenceID,RowPosition ASC";
 	  	Log.e(getClass().getName(), "fetchSentences SQL: "+sql);		
 		return database.rawQuery(sql, new String [] {});
 	}
 	
 	public Cursor fetchChapters(){
-		return database.rawQuery("SELECT chapterBegins,chapterEnds,Description FROM Chapters ORDER BY ID", new String [] {});
+		return database.rawQuery("SELECT ID, Description FROM Chapters ORDER BY ID", new String [] {});
 	}
 
 	// Use this method when the audio is played from the SQLite database

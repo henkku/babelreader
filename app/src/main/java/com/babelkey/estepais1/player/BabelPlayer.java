@@ -590,7 +590,7 @@ public class BabelPlayer extends Activity implements OnSharedPreferenceChangeLis
     	AlertDialog chapterSelectionDialog;
     	List<String> strings = new ArrayList<String>();
 		for(ChapterUI tempChapterUI : BabelPlayerService.getInstance().getChapterUIList()){
-			strings.add(tempChapterUI.getDescription());
+			strings.add(tempChapterUI.getName());
 		}   	
   
     	final CharSequence[] items = strings.toArray(new String[strings.size()]);

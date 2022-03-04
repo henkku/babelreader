@@ -28,10 +28,9 @@ public class CourseHelper {
 	    chapterUIList = new ArrayList<ChapterUI> (chapterCursorSize);
     	Log.e(getClass().getName(), "chapterCursorSize: "+chapterCursorSize);
 	    while(chapterCursor.isAfterLast() == false){
-	    	ChapterUI chapterUI = new ChapterUI(chapterCursor.getInt(0), chapterCursor.getInt(1),chapterCursor.getString(2));
-	    	Log.e(getClass().getName(), "create chapterUI for: "+chapterUI.getDescription());
-	    	Log.e(getClass().getName(), "chapter begins: "+chapterUI.getChapterBegins());
-	    	Log.e(getClass().getName(), "chapter ends: "+chapterUI.getChapterEnds());
+	    	ChapterUI chapterUI = new ChapterUI(chapterCursor.getInt(0), chapterCursor.getString(1));
+	    	Log.e(getClass().getName(), "create chapterUI for chapterName: "+chapterUI.getName());
+	    	Log.e(getClass().getName(), "create chapterUI for chapter ID: "+chapterUI.getChapterId());
 	    	chapterUIList.add(chapterUI);
 	    	chapterCursor.moveToNext();
 	    }
