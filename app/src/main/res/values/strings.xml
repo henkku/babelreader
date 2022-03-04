@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="course_name">Este Pais 1</string>
+    <string name="babelkey_player">BABELKEY PLAYER</string>
+    <string name="app_name">Este Pais 1</string>
+    <string name="loading">LOADING...</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_help">Help</string>
+    <string name="menu_feedback">Contact us..</string>
+    <string name="menu_about">About Babelkey</string>
+    <string name="menu_chapters">Select Chapter</string>
+    
+    <string name="dialog_set_number">Set</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_picker_title">Choose a number</string>
+    
+    <string name="preference_pausebefore_title">Pause Before</string>    
+    <string name="preference_pauseafter_title">Pause After</string>  
+    
+    <string name="feedback_title">Enter your message details:</string>  
+    <string name="feedback_name">your name</string>  
+    <string name="feedback_email">your email</string>  
+    <string name="feedback_body">body</string>  
+    <string name="feedback_type">Enter message type</string>  
+    <string name="feedback_contactme">Would you like an email response?</string>  
+    <string name="feedback_send">Create email</string>  
+    <string name="feedbacktype1">Praise</string>  
+    <string name="feedbacktype2">Gripe</string>  
+    <string name="feedbacktype3">Question</string>  
+    <string name="feedbacktype4">Suggestion</string>  
+    <string name="feedbacktype5">Bug</string>
+        
+    <string name="help_welcome">We will teach you to understand and speak foreign languages, with minimal effort. </string>
+    
+    <string name="help_title">Help</string>  
+    <string name="help_overview">The main idea of Babelkey is that you follow a tale or story as you hear it from your headphones in a foreign language. While the story
+    is being told, you can read it as text on your screen. On the left side of the screen you can follow the course text in a foreign language, and on the right
+    side of the screen you can quickly glance translations to words, which are yet unfamiliar to you. From the settings menu you can control the length of pauses before and after each sentence.
+    \n In order for one to become fluent in a language, one needs a lot of repetition, so try to have the course playing in the background as often as possible, 
+    while doing other things.</string>
+    <string name="help_pauseSettings">From the settings menu you can control the length of pauses before and after each sentence. It is recommended that you control the
+        pauses to suit your current needs, because this will impact your comfort of studying the language course.</string>        
+    <string name="help_play">Play. Start the playback.</string>
+    <string name="help_pause">Pause. Pause the playback.</string>
+    <string name="help_previous">Previous. Move to the previous sentence.</string>    
+    <string name="help_next">Next. Move to the next sentence.</string>    
+    <string name="help_repeat">Repeat. Enable/Disable repeat mode. In repeat mode the current sentence will be repeated until you disable repeat mode.</string>
+
+    <string name="about_welcome">We will teach you to understand and speak foreign languages, with minimal effort. </string>
+
+    <string name="about_title">About Babelkey</string>
+    <string name="about_overview">Babelkey is a methodology for learning to speak and understand new languages with minimal effort, and it is the optimal method for studying languages on
+        a mobile phone or other mobile device. \n\nBabelkey was developed by the Finnish Dr. Wille Mikkola back in 1980s, during the time when he travelled the world as a businessman/engineer/architect/artist. The Babelkey
+        methodology was recently discovered to be a perfect match for today"'"s smart-phones and tablets, and we have since then been working on delivering it to your pocket.
+    \n\nThis Spanish course is a working demo and also a BETA version of our course player application. We will have proper courses published and made available for you as soon as possible. In the meanwhile please
+        let us know what you think about the product.</string>
+
+</resources>

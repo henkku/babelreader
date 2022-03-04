@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewSwitcher xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/screenSwitcher"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:inAnimation="@anim/alpha_fade_in"
+	android:outAnimation="@anim/in_animation">
+
+	<!--  loading screen layout -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:id="@+id/loadingScreen">
+	<ImageView android:src="@drawable/babelicon_large"
+		android:id="@+id/loadingImage"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="@android:color/black" />
+
+</RelativeLayout>
+
+<!--  application main layout -->
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/babelMainLayout"
+    >
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal"
+            android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="bottom"
+            android:paddingLeft="5dp" android:paddingRight="5dp" android:background="@drawable/ui_panel_gradient">
+            <FrameLayout android:layout_width="wrap_content"
+    			android:layout_height="wrap_content" android:layout_weight="1">
+	            <ImageButton android:id="@+id/hideoriginalbutton" android:layout_width="50dip" android:layout_height="40dip"
+	                android:src="@drawable/hideoriginal" android:layout_gravity="center" />
+            </FrameLayout>
+			<SeekBar android:id="@+id/sentenceselector" android:layout_weight="4"
+		    	    android:layout_width="fill_parent" android:layout_height="wrap_content"
+		    	    android:paddingLeft="10dp" android:paddingRight="10dp" />
+            <FrameLayout android:layout_width="wrap_content"
+    			android:layout_height="wrap_content" android:layout_weight="1">
+			    <ImageButton android:id="@+id/hidetranslationbutton" android:layout_width="50dip" android:layout_height="40dip"
+	                android:src="@drawable/hidetranslation" 
+	                android:layout_gravity="center" />
+			</FrameLayout>
+    </LinearLayout>
+
+  	<ScrollView android:layout_marginBottom="53dip" xmlns:android="http://schemas.android.com/apk/res/android" 
+	     android:id="@+id/sentenceViewHolder"
+	     android:layout_height="fill_parent" 
+	     android:layout_width="fill_parent"
+	     android:background="@android:color/black">
+	</ScrollView>
+
+<!-- 	<TableLayout android:layout_marginTop="-55dip" xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/buttonPanel"
+   		android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@drawable/ui_panel_gradient" 
+   		 android:orientation="horizontal">
+		<TableRow android:layout_width="fill_parent" android:layout_gravity="center_horizontal">
+		   <ImageButton android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content"  
+		         android:src="@drawable/previous" android:id="@+id/previousbutton" />
+		   <ImageButton android:gravity="left" android:layout_width="wrap_content"  
+		         android:layout_height="wrap_content"  
+		         android:src="@drawable/play"  
+		         android:id="@+id/playbutton"></ImageButton>
+		   <ImageButton android:gravity="left"  
+		         android:layout_width="wrap_content"  
+		         android:layout_height="wrap_content"  
+		         android:src="@drawable/next"  
+		         android:id="@+id/nextbutton"></ImageButton>
+		   <ImageButton android:gravity="left"  
+		         android:layout_width="wrap_content"  
+		         android:layout_height="wrap_content"  
+		         android:src="@drawable/repeat"  
+		         android:id="@+id/repeatbutton"></ImageButton>
+			<TextView android:id="@+id/sentencecounter" android:text="0 / 0" android:layout_width="wrap_content"
+              	android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+              	android:textColor="@android:color/white" android:textSize="18sp" android:textStyle="bold" />
+		</TableRow>
+	</TableLayout>
+-->
+ 	<LinearLayout android:layout_marginTop="-55dip" xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/buttonPanel"
+   		android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@drawable/ui_panel_gradient" 
+   		 android:orientation="horizontal">
+           <RelativeLayout android:layout_width="wrap_content"
+    		android:layout_height="wrap_content" android:layout_weight="2">
+			   <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+			         android:src="@drawable/play" android:id="@+id/playbutton" android:layout_centerHorizontal="true"></ImageButton>
+		   </RelativeLayout>
+		   <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_weight="2" android:layout_width="wrap_content" android:layout_height="wrap_content" >
+				<TextView android:id="@+id/sentencecounter" android:text="0 / 0" android:layout_width="wrap_content"
+	              	android:layout_height="wrap_content" android:textColor="@android:color/white" android:textSize="22sp" android:textStyle="bold" 
+	              	 android:layout_centerHorizontal="true"/>
+			</RelativeLayout>
+			<RelativeLayout android:layout_width="wrap_content"
+    		android:layout_height="wrap_content" android:layout_weight="2">
+			   <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content"  
+			         android:src="@drawable/repeat" android:id="@+id/repeatbutton" android:layout_centerHorizontal="true"></ImageButton>
+		   </RelativeLayout>
+	</LinearLayout>
+	
+</LinearLayout>
+
+</ViewSwitcher>
+

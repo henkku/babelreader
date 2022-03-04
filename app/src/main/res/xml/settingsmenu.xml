@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:picker="http://schemas.android.com/apk/res/com.babelkey.player">
+    <PreferenceCategory android:title="Layout Settings">
+        <ListPreference android:title="Text Alignment" android:key="layout_alignment" android:persistent="true"
+        android:defaultValue="LEFT_ALIGN"
+        android:entries="@array/layout_alignment" android:entryValues="@array/layout_alignment_values"/>
+<!--  estepais1oofin.utils.NumberPickerPreference
+        	android:key="fontSize"
+        	android:persistent="true"
+        	android:title="Change Text Size"
+        	picker:wrap="false"/>
+-->
+        <com.babelkey.estepais1.utils.NumberPickerPreference
+            android:key="fontSize"
+            android:persistent="true"
+            android:title="Change Text Size"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Player Settings">
+        <com.babelkey.estepais1.utils.SeekBarPreference
+            android:persistent="true"
+                android:key="pauseBeforeSentences"
+                android:defaultValue="2"
+                android:title="@string/preference_pausebefore_title" />
+        <com.babelkey.estepais1.utils.SeekBarPreference
+            android:persistent="true"
+                android:key="pauseAfterSentences"
+                android:defaultValue="2"
+                android:title="@string/preference_pauseafter_title" />
+    </PreferenceCategory>
+       
+</PreferenceScreen>

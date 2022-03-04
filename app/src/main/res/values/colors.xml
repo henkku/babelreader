@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>   
+    <color name="pressed">#333333</color>
+    <color name="focused">#29231D</color>
+    <color name="normal">#636855</color>
+    <color name="uipanel">#222222</color>
+</resources>

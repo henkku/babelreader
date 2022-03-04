@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="layout_alignment">
+    	<item name="LEFT_ALIGN">Align Left Edge</item>
+    	<item name="CENTER_RELATIVE">Align Center</item>
+    </string-array>
+    <string-array name="layout_alignment_values">
+    	<item name="LEFT_ALIGN">LEFT_ALIGN</item>
+    	<item name="CENTER_RELATIVE">CENTER_RELATIVE</item>
+    </string-array>
+    <string-array name="feedbacktypelist">  
+        <item>@string/feedbacktype1</item>  
+        <item>@string/feedbacktype2</item>  
+        <item>@string/feedbacktype3</item>  
+        <item>@string/feedbacktype4</item>  
+        <item>@string/feedbacktype5</item>  
+    </string-array> 
+</resources>
